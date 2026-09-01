@@ -1,0 +1,760 @@
+{
+  "jul1": {
+    "label": "Week of June 20, 2026",
+    "cards": [
+      {
+        "section": "OPS",
+        "title": "CRAFT Data Foundation Enhancements",
+        "text": [
+          "Continued partnership with Data Enablement and Data Engineering to strengthen the CRAFT data model across Contact Segment, Care Interaction, and Appeasements tables. Working with stakeholders to identify high-value reporting dimensions to be added directly into CRAFT — reducing downstream joins and improving reporting usability.",
+          "Fields in scope include Agent Login ID, Agent Account ID, LOB, Sub-LOB, Department, Contact Channel, Contact Segment ID, Partner Mapping, SRC_CASE_ID, RQ_ID, and survey and service segment mappings. This makes CRAFT tables more complete, reliable, and easier to adopt as the CES source of truth."
+        ],
+        "ns": "Continue prioritizing additional high-impact fields, finalize logic with stakeholders, support implementation, and validate new fields before broader rollout.",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "Repeat Contact Deep Dive — High Repeat Orders Analysis",
+        "text": [
+          "Completed deep-dive analysis of high-repeat orders to understand what drives excessive customer callbacks. Reviewed FY27 repeat-contact distribution across orders, customers, and repeat volume — with focused examination of the 762 orders that generated 16+ repeat contacts, driving 15,763 total contacts.",
+          "Key finding: While 70% of repeat orders repeat only once, fewer than 2% of orders with 6+ repeats drove ~8.4% of total repeat contact volume. Primary drivers: refund and payment issues, limited prior-contact visibility, repeated transfers and escalations, missed follow-ups, frontline authority gaps, and workflow limitations."
+        ],
+        "ns": "Drive improvements in refund resolution, prior-contact visibility, transfer reduction, and workflow simplification. Continue partnering with Ops and Reporting to quantify impact.",
+        "report": "https://puppy.walmart.com/sharing/p0s05rd/rcr_repeat_buckets_fy27"
+      },
+      {
+        "section": "WFM",
+        "title": "SANAS AI Trend Report — MVP2 Enhancements",
+        "text": [
+          "Published MVP2 of the SANAS AI Trend Report with expanded filtering and insight capabilities. New additions: filters for final complexity and tenure bucket, a live Slice vs. Baseline delta row showing AHT, CSAT, FCR, RCR, and Transfer variance, and an insights card explaining why complexity and tenure materially affect results.",
+          "Key findings: AHT rises 24% from LOW to HIGH complexity; Transfer Rate increases 47%. After controlling for tenure, IQOR performs better on speed and CSAT, TCOM leads on FCR. CSAT is unexpectedly higher on harder calls."
+        ],
+        "ns": "Prioritize retention beyond 6 months, focus SANAS AI improvements on HIGH-complexity workflows, and address LOW-complexity CSAT — the larger customer satisfaction opportunity.",
+        "report": "https://puppy.walmart.com/sharing/a0d0tex/sanas-ai-trend-report-mvp2"
+      },
+      {
+        "section": "WFM",
+        "title": "Customer Effort vs Call Complexity Correlation Analysis — MVP1",
+        "text": [
+          "Completed MVP1 analysis covering 46.1M orders across 20.9M customers over 17 months (Feb 2025–Jun 2026). Delivered as an interactive HTML dashboard with executive KPIs, correlation analytics, joint distributions, and bucket-level breakdowns.",
+          "Key finding: Contact volume is the dominant driver of customer effort — correlation 0.79 (TCE vs contact count) vs. only 0.29 (TCE vs complexity). Monthly correlation dropped from 0.37 to 0.22, suggesting the complexity model needs reassessment. Approximately 2.3M orders (5%) sit in the HIGH-complexity / High-Severe-effort pain zone."
+        ],
+        "ns": "Repeat contact reduction is the highest-ROI lever. Complexity model should be reassessed. December 2025 seasonal distortion warrants separate analysis.",
+        "report": "https://puppy.walmart.com/sharing/a0d0tex/tce-call-complexity-correlation-analysis"
+      },
+      {
+        "section": "CRM",
+        "title": "A/B Test Design and Matched Agent Selection — Experiment Foundation Completed",
+        "text": [
+          "Completed the next phase of Agent Assist experiment design by selecting 200 matched pairs (200 test, 200 control agents) for pilot execution. Cohort built using a stratified randomized design ensuring both groups began closely matched across partner/site, agent tenure, average daily contact volume, and day-to-day AHT variability.",
+          "From thousands of valid randomizations, the final cohort was chosen based on strongest balance across AHT, CSAT, Repeat Contact Rate, and Transfer Rate — so observed results can be confidently attributed to Agent Assist rather than underlying group imbalance."
+        ],
+        "ns": "Coordinate with Operations on pilot rollout, finalize success metrics, and begin tracking results after launch.",
+        "report": "https://puppy.walmart.com/sharing/agent-assist-ab-test-executive-summary-v5"
+      },
+      {
+        "section": "CRM",
+        "title": "Learning Curve Analysis — True Agent Assist Impact Requires 2 to 4 Weeks",
+        "text": [
+          "Completed end-to-end learning curve analysis across multiple historical agent cohorts to determine how long it takes agents using Agent Assist to reach stable performance. Agents require approximately 2 to 4 weeks to move through the onboarding learning curve — results before Week 4 are heavily distorted by onboarding friction and do not reflect steady-state behavior.",
+          "This establishes a clear view of the true impact horizon for Agent Assist and provides an important guardrail: pre/post comparisons and pilot success evaluations should not be made until agents have passed the 4-week maturity threshold."
+        ],
+        "ns": "Adjust A/B test timelines accordingly and incorporate the 2-to-4-week soak period into leadership dashboard schedules.",
+        "report": "https://puppy.walmart.com/sharing/s0j0aug/aht-aa-timeline-by-cohort-all-agents"
+      }
+    ]
+  },
+  "jul8": {
+    "label": "Week of July 4, 2026",
+    "cards": [
+      {
+        "section": "CRM",
+        "title": "AHT Trend Analysis (FY26 vs. FY27)",
+        "text": [
+          "Completed an AHT trend analysis covering WK8–WK20 across FY26 and FY27 to identify the primary drivers by line of business and assess Agent Assist's contribution to overall AHT performance. This work provides leadership with clearer visibility into the operational factors driving AHT and establishes a baseline for measuring Agent Assist impact and future optimization opportunities."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Agent Assist Dashboard UI Enhancement",
+        "text": [
+          "Completed a dashboard enhancement to add the Agent Assist coverage goal for Northstar following the launch of WISMO and R&R support. This enables the team to monitor Northstar coverage against expected contact volume and improves visibility into adoption following rollout."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Northstar Journey Analysis – Resolution and Routing Review",
+        "text": [
+          "Work is in progress to identify the customer journey for contacts that start in Northstar and determine whether they are ultimately resolved within Northstar or routed to another experience. This analysis will help isolate contacts that should have remained in Northstar but did not, support targeted audio and contact reviews, and identify missed resolution opportunities and routing gaps in the intended Northstar experience."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Northstar Journey Analysis – End-to-End Path Mapping",
+        "text": [
+          "A parallel analysis is underway to map the full end-to-end journey for contacts that start in Northstar and quantify the share of contacts following each path. This work will provide visibility into the distribution of customer journeys, identify the highest-volume defect paths where contacts begin in Northstar but end elsewhere, and help prioritize incremental improvement opportunities over time."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Spark Insights Pack Feedback",
+        "text": [
+          "Completed stakeholder feedback collection for the Spark Insights Pack and communicated requested enhancements to the Reporting team. This ensures future reporting updates remain aligned to business needs and stakeholder expectations."
+        ],
+        "ns": "Follow up with the Reporting team on implementation of requested changes.",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Trust & Safety Workflow Discovery",
+        "text": [
+          "Work is in progress to better understand how Trust & Safety agents use FIXIT to manage delivery forms, with the first job-shadowing session now completed with Team Leaders. This effort is improving operational understanding, helping validate reporting logic, and supporting more accurate FIXIT metrics and analyses."
+        ],
+        "ns": "Continue additional job-shadowing sessions across more ticket types and workflows.",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "FIXIT Volume Reconciliation – CES vs. LMD",
+        "text": [
+          "Work is in progress to investigate discrepancies in FIXIT ticket volume between CES and LMD by comparing underlying query logic. Initial findings show CES applies additional filters — including specific agent groups, exclusion of pre-arbs sites, and closed-ticket-only logic — while LMD does not. This review will help determine whether the differences are driven by intentional business rules or inconsistent implementation, and will support alignment on a standardized FIXIT volume definition across teams."
+        ],
+        "ns": "Validate the rationale for the current filters with Operations and determine whether CES reporting logic should be updated.",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Spark CRM Dashboard Data Source Migration",
+        "text": [
+          "Began migrating the Spark CRM dashboard backend to CRAFT tables and identified logic issues in the EBR tables, which have been shared with the Data Enablement team. This work supports migration to a more reliable and maintainable data source while improving dashboard accuracy and ensuring known data quality issues are resolved before cutover."
+        ],
+        "ns": "Track resolution of the identified EBR issues with Data Enablement.",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Performance Scorecard – Weekly Update (Jul 3–Jul 9)",
+        "text": [
+          "Delivered several enhancements to the Agent Performance Scorecard this week: split navigation into separate tabs for Internal and Vendor agents, introduced distinct grading thresholds for each population to improve scoring fairness, refined the Performance Quadrant, corrected Top/Bottom 10 rankings to better reflect true agent performance over time, and updated filter summaries to distinguish unique agents from agent-month records.",
+          "The Vendor experience was simplified by removing non-applicable KPIs from the Vendor Tenure Radar while preserving the full Internal view. Automated validation was also expanded to nearly 200 regression checks to improve platform reliability and reduce risk in future releases."
+        ],
+        "ns": "Incorporate feedback provided by Larissa during the first review.",
+        "report": "https://puppy.walmart.com/sharing/p0b04z0/agent-performance-scorecard-v2"
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Effort Score – MVP1 Foundation Completed",
+        "text": [
+          "Completed foundational work for MVP1 of the Agent Effort Score by finalizing the data sources and business logic for Turn Count, Word Count, Click Count, and Action Count KPIs, and completing the SQL data model. This establishes the core analytical framework for the new score and positions the team to move into validation and report development."
+        ],
+        "ns": "Validate the SQL model for accuracy and consistency and begin development of the initial reporting prototype for MVP1.",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "RCR Deep Dive Dashboard and Analytics Views",
+        "text": [
+          "Completed the build of the Repeat Contact Rate deep dive dashboard and supporting analytics views, with implementation in AISLE One as the next step. The framework is designed to help Operations and leadership identify high-friction repeat-contact behavior across both orders and customers, and includes:",
+          "Configurable egregious-repeat thresholds (3+, 4+, 5+, 6+ contacts) · Order-level and customer-level repeat views · Drilldowns by Partner, Site, Channel, Queue, Contact Reason, Program, and Business Unit · Self-service search for Order ID, Customer ID, Case Number, and Contact ID",
+          "This creates a more actionable RCR analysis experience that moves beyond high-level repeat metrics and enables teams to identify repeat-heavy orders, excessive customer repeat behavior, ownership patterns, and operational drivers of repeat contacts."
+        ],
+        "ns": "Partner with Reporting to implement the completed deep dive in AISLE One, validate the production views, and support rollout for operational use.",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "Contact Reason Analysis – High-Repeat Reason Code Research",
+        "text": [
+          "Began research to better understand what the high-repeat reason codes No Workflow Entered, Incident Disconnect, and System Closed actually represent before moving into solutioning. The work is focused on understanding how these codes are defined, where they appear in workflows, and whether they represent true customer issues, workflow exits, system-generated closures, or fallback reasons selected by agents.",
+          "This analysis will help determine whether the reason codes accurately reflect customer intent or are masking the true drivers of repeat contacts — which is critical before making changes to taxonomy, workflows, or reporting."
+        ],
+        "ns": "Document the business definition, expected use case, and actual usage pattern for each reason code through transcript reviews and workflow analysis, then align with stakeholders on whether improvements are needed.",
+        "report": ""
+      }
+    ]
+  },
+  "jul15": {
+    "label": "Week of July 11, 2026",
+    "cards": [
+      {
+        "section": "CRM",
+        "title": "Agent Assist Dashboard Enhancements – Matched-Pair Cohort Update in Progress",
+        "text": [
+          "Progressed the Agent Assist dashboard update by adding 500 matched agent pairs to support more valid like-for-like performance comparisons across Agent Assist and non-Agent Assist populations. The current work is focused on reorganizing agent groups, with final dashboard completion pending stakeholder confirmation on the updated assignments. This enhancement improves the rigor of Agent Assist performance measurement by strengthening apples-to-apples cohort comparisons."
+        ],
+        "ns": "Finalize group assignments after stakeholder confirmation and complete the dashboard update.",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Northstar CSAT Deep Dive – AA vs. Traditional CCA2",
+        "text": [
+          "Work is in progress to understand why Agent Assist CSAT is lower than traditional CCA2 within Northstar and identify the root causes across different customer journey patterns. The analysis covers three core areas: Northstar journey segmentation across pure Northstar, moved-to-other-bucket, and multi-intent contacts; workflow-level CSAT across intents such as WISMO, Refunds and Replacements, and My Money; and comparison of these patterns against traditional CCA2. This work will identify which journey paths are driving the CSAT gap, isolate the workflows and fall-through destinations with the highest disruption cost, and determine whether the issue is primarily routing and complexity or a deeper product-resolution limitation. Findings will help prioritize product improvements and future workflow expansion in Northstar."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Track First Intent and Resolution per Contact – Northstar Contact Journey Analysis",
+        "text": [
+          "A related Northstar analysis is underway to track the first intent and final resolution path for contacts that start in Northstar, with the goal of identifying whether those contacts were truly resolved within the intended experience. This work will distinguish between contacts that stayed in Northstar end to end versus those that were transferred or involved multiple intents, helping isolate the contacts that should have remained in Northstar but did not. The analysis will support targeted audio and contact reviews, highlight missed resolution opportunities, and measure where customers are falling out of the intended Northstar flow."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Northstar Journey Analysis – End-to-End Path Mapping",
+        "text": [
+          "In parallel, a broader Northstar journey analysis is mapping the full end-to-end customer journey for contacts that begin in Northstar and quantifying the share of contacts following each path. This work is designed to identify the highest-volume defect paths — especially contacts that start in Northstar but end in a different experience — and to quantify the overall distribution of customer journeys. The output will help prioritize incremental product and routing improvements over time based on where the largest operational and customer-experience defects are occurring."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Spark CPO Logic Enhancement – Calculation Standardized",
+        "text": [
+          "Completed a refinement of the Spark CPO calculation logic and shared updated requirements with Data Engineering for implementation in the CRAFT table. This work will standardize Spark CPO logic across reporting datasets, improve consistency, and support a single source of truth for reporting."
+        ],
+        "ns": "Data Engineering to implement updated Spark CPO logic in the CRAFT table to establish a single source of truth across reporting datasets.",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Trust & Safety Workflow Discovery – Dashboard Priorities Defined",
+        "text": [
+          "Completed the second job-shadowing session with Trust and Safety Team Leaders to better understand how agents use FIXIT for appeals and pre-arbitration cases, and met with stakeholders to align on the key North Star metrics and reporting priorities for the Trust and Safety dashboard. This work strengthens operational understanding, supports validation of reporting logic, and ensures dashboard development is aligned to the most important business and operational needs."
+        ],
+        "ns": "Begin development of the Trust and Safety reporting dashboard.",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Effort Score – MVP1 Dashboard Published",
+        "text": [
+          "Completed the initial leadership-ready Agent Effort Score dashboard and published it with Digital LOB, Chat, and Chat Spanish data covering approximately 4.6M contacts, 7,800 agents, and 73 days of activity. The report implements a seven-component scoring model across Turn Count, Word Count, Click Count, Workflow Count, Case Complexity, Action Count, and Transfer Count — normalized into a 0–100 Effort Score and grouped into HIGH, MEDIUM, and LOW effort buckets. Agent Talk % was removed from the methodology as a voice-only measure. The report includes executive KPIs, trend views, a root-cause matrix, Agent Assist versus CCA2 comparison, Walmart-week trend, driver analysis, and contact-level drilldowns.",
+          "Key findings: roughly 32% of chat contacts fall into the HIGH-effort bucket; Agent Assist penetration on chat is approximately 4.3%; the biggest effort drivers are Word Count and Turn Count, pointing to heavy back-and-forth chats as the largest coaching and automation opportunity. Agent Assist contacts have lower Transfer Rate and AHT than CCA2 but higher clicks and workflows, suggesting Agent Assist is being applied to more complex cases."
+        ],
+        "ns": "Recalibrate the HIGH-effort threshold and validate the report with the CRM team.",
+        "report": "https://puppy.walmart.com/sharing/a0d0tex/agent-effort-scorecard"
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Performance Scorecard – Expanded Visibility and Next-Phase Enhancements",
+        "text": [
+          "Expanded the Agent Performance Scorecard by onboarding RightNow Email and Chat agents, adding visibility for 1,610 previously untracked agents and 1.96M customer contacts. To preserve scoring consistency, the RightNow population was added as visibility-only with no impact to grades or scoring, following the same approach used for Support and Ramp-Up populations. Additional usability improvements included Bangalore and Chennai location filters for India and hover-over KPI acronym descriptions within the KPI Fingerprint by Tenure view to improve interpretability. The scorecard was also reviewed with the Internal Operations team, and alignment was reached on the next phase of enhancements."
+        ],
+        "ns": "Implement a department- and channel-specific KPI weighting model so scoring better reflects operational priorities.",
+        "report": "https://puppy.walmart.com/sharing/p0b04z0/agent-performance-scorecard-v2"
+      },
+      {
+        "section": "WFM",
+        "title": "CCA2 vs. Agent Assist Chat CSAT Analysis – Structural Performance Gap Quantified",
+        "text": [
+          "Completed a leadership deep dive comparing CCA2 and Agent Assist chat CSAT performance and published a self-serve dashboard supported by a repeatable BigQuery pipeline joining surveys to workflow, routing, tenure, and agent metadata. The dataset was refreshed to 292,567 rows with incident-level CST timestamps. The report includes trends, distributions, period-over-period deltas, breakdowns by workflow, tenure, routing, and self-serve, plus a triage workbench that auto-tags rating 1–2 comments across 11 curated failure patterns with drill-through to verbatims and sentiment scoring.",
+          "Key findings: CCA2 leads Agent Assist by 22.4 points in CSAT (CCA2 at 88.5% vs. Agent Assist at 66.1%); Agent Assist has 3.1× the detractor rate; Agent Assist Chat Escalation was the weakest sub-channel at 26.3% CSAT; SMART routing materially outperformed GENAI; and a negative tenure trend was observed within Agent Assist — tenured agents scoring worse than new hires, suggesting the tooling may be eroding performance over time. The recent 14-day trend remained flat, indicating the gap is structural rather than temporary."
+        ],
+        "ns": "Address AA Chat Escalation through a tactical sprint; root-cause the tenure regression; diagnose GENAI routing; benchmark Agent Assist agents against top-decile CCA2 agents for coaching; introduce minimum sample-size guardrails into public scoring; investigate the low-performing CCA2 “No workflow” bucket.",
+        "report": "https://puppy.walmart.com/sharing/a0d0tex/cca2-vs-agent-assist-csat-analysis-may-jun-2026"
+      },
+      {
+        "section": "OPS",
+        "title": "No Workflow Entered Contact Reason Analysis – Data Quality Root Cause Identified",
+        "text": [
+          "Completed a deep-dive analysis of the “No Workflow Entered” contact reason to determine why it is one of the highest repeat-contact reason codes and assess its impact on reporting accuracy. The review covered more than 510K handled contacts and included analysis of handle time distribution, partner, site, and agent over-indexing, contact reason alignment, taxonomy coverage, transcript reviews, screen recordings, workflow observations, and CCA2 taxonomy behavior.",
+          "The analysis found that “No Workflow Entered” is primarily a data quality issue rather than a true customer contact reason — in many cases, agents complete the correct workflow during the interaction but do not separately close the incident in CCA2, causing it to auto-close under the default label and overwrite the actual customer reason. Key findings: 82.2% of these contacts were normal handled interactions; 88.2% already had an existing CCA2 contact reason that could potentially be retained; only 11.8% reflected genuine taxonomy gaps requiring new reason codes. This has meaningful implications for repeat-contact analysis, transfer reporting, demand insights, and operational prioritization."
+        ],
+        "ns": "Align with Operations on the expected incident-closure process in CCA2; partner with the CCA2 Product team to evaluate retaining the last workflow selected by the agent on auto-closed incidents; address identified taxonomy gaps and partner/agent over-indexing opportunities.",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "Walmart Private Brand Manual Inquiry Analysis – Baseline Build Underway",
+        "text": [
+          "Started a new analysis to quantify FY2025 and FY2026 customer contacts related to Walmart Private Brand product manuals. The work is focused on measuring manual-related contacts across calls, chats, and messaging where available, and will evaluate monthly trends, contact volume by Private Brand, primary contact reasons or dispositions, and key operational metrics including AHT, Transfer Rate, repeat contacts, and cost per contact. Where a dedicated reason code does not exist, proxy logic will be developed using keywords, case reasons, or product categories.",
+          "This analysis will establish a baseline for manual-related customer demand, quantify the operational cost of these contacts, and identify which products and categories generate the highest manual-inquiry volume. Findings will support the business case for expanding self-service access to Walmart Private Brand product manuals."
+        ],
+        "ns": "Finalize the data source and reporting methodology; complete the FY2025 and FY2026 baseline analysis; summarize trends, operational metrics, and improvement opportunities.",
+        "report": ""
+      }
+    ]
+  },
+  "jul22": {
+    "label": "Week of July 18, 2026",
+    "cards": [
+      {
+        "section": "OPS",
+        "title": "DES → Delivery Support Sierra Routing Analysis – Routing Logic Identified as the Primary Driver",
+        "text": [
+          "Completed an end-to-end analysis of DES to Delivery Support transfers to determine whether contacts were being routed to the correct queue and identify the drivers behind elevated transfer rates. The deep dive linked 95.8% of transferred contacts back to Sierra conversations and compared what customers told Sierra with what they ultimately needed from live agents. The analysis found that the primary opportunity sits in Sierra’s routing logic rather than downstream agent handling, with approximately 88% of contacts transferred from DES to Delivery Support representing active driver issues that should have been routed directly to Delivery Support, while only about 12% were true enrollment-related contacts appropriate for DES. The work also surfaced specific routing patterns that can improve caller classification before escalation, reducing unnecessary transfers and improving customer experience."
+        ],
+        "ns": "partner with the Sierra and Spark teams to review the findings, evaluate routing logic enhancements, and prioritize improvements that better distinguish active drivers from applicants before escalation. Report link: DES → Delivery Support Sierra Routing Analysis",
+        "report": "https://puppy.walmart.com/sharing/p0s05rd/sierra-des-routing-analysis"
+      },
+      {
+        "section": "OPS",
+        "title": "Executive Escalation Billable Contact Count Metric Simplification – Methodology Aligned for Easier Reporting",
+        "text": [
+          "Completed a review of the Executive Escalation Billable Contact Count methodology and reconciled the difference between incident counts and reported billable contacts. In partnership with the Executive Escalation team, the current event-based logic was reviewed in detail, including how handled contacts are derived from agent actions and how multiple interactions on the same incident can generate multiple billable contacts while still consolidating actions within short time windows. This established a shared understanding of why FY27 YTD Executive Escalations show approximately 9K unique incidents but 76K billable contacts, or roughly 8.5 billable contacts per incident. Stakeholders aligned that the current methodology is overly complex for Executive Escalation reporting and agreed that one incident should be treated as one billable contact going forward, simplifying reporting and improving consistency."
+        ],
+        "ns": "partner with Data Enablement to replace the current event-based logic with an incident-based methodology and update Executive Escalation reporting accordingly",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Agent Assist Dashboard Enhancements – Matched Group Updates in Progress",
+        "text": [
+          "Work is in progress to update the Agent Assist dashboard by removing Experience Lab agents and splitting BPO agents into Alpha and 1,000 A/B test groups. The backend changes have already been completed locally and are scheduled for deployment in coordination with the reporting refresh to avoid disrupting the production dashboard. These updates will improve the accuracy and validity of Agent Assist performance comparisons by ensuring a more apples-to-apples view across matched agent groups."
+        ],
+        "ns": "deploy the changes and coordinate with the Reporting team to update the production dashboard",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "AOP Forecast Update – Rollout Plan Being Rebased",
+        "text": [
+          "Work is underway to update the AOP forecast to reflect the revised Agent Assist rollout strategy, including the decision to stop Agent Assist for voice and move forward with a chat-only ramp plan. This update is necessary to ensure the forecast accurately reflects the latest rollout assumptions and projected business impact."
+        ],
+        "ns": "finalize the model once leadership confirms the revised Agent Assist chat ramp-up plan",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "NS CSAT Deep Dive Analysis – Early Root Causes Identified",
+        "text": [
+          "Completed a preliminary deep dive into why Agent Assist CSAT is lower than traditional CCA2 within Northstar and identified several early hypotheses across journey patterns and workflow handling. The analysis segmented Northstar contacts by journey type and found that contacts fully handled within Northstar on workflows already trained in Northstar perform at CSAT levels comparable to traditional CCA2. The work also found that pure Agent Assist Northstar contacts can achieve CCA2-comparable CSAT on Returns and Replacements, where appeasements help offset negative tone, while traditional CCA2 appears to rely more heavily on appeasements to lift CSAT on surveyed contacts. These findings begin to separate where the issue is rooted in journey design versus workflow handling and will guide future product and operational improvements. Report links: AA vs CCA2 CSAT Hypotheses; NS CSAT vs Traditional CCA2"
+        ],
+        "ns": "",
+        "report": "https://puppy.walmart.com/sharing/s0j0aug/ns-csat-vs-trad-cca2"
+      },
+      {
+        "section": "CRM",
+        "title": "Quick Actions and Workflow Pattern Analysis – AA vs Traditional CCA2",
+        "text": [
+          "Work is in progress to isolate the impact of Quick Actions and workflow patterns on CSAT by comparing traditional CCA2 contacts where Quick Actions were used versus not used, and by evaluating how agents navigate workflows to achieve similar customer outcomes such as refunds. This analysis will help determine whether certain workflow paths or quick-action usage patterns are helping or hurting customer satisfaction and clarify how agents are adapting workflows to resolve issues. The findings will support more targeted improvements in workflow design, coaching, and product guidance."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "FIXIT Operations Dashboard – Initial Build Underway",
+        "text": [
+          "Work is in progress on a new operations dashboard for the Trust and Safety Operations team. North Star metrics have now been aligned across each Trust and Safety pillar, and an initial dashboard demo has been developed. This effort will improve visibility into FIXIT operations and help the team identify trends, bottlenecks, and improvement opportunities."
+        ],
+        "ns": "continue dashboard development while validating additional metrics such as AHT and TPH and finalizing metric definitions before implementation",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Effort Score – July 23 Leadership Update",
+        "text": [
+          "Published a major update to the Agent Effort Score dashboard by recalibrating stale scoring thresholds, reworking effort-bucket cutoffs, and adding several new analytic sections to improve prioritization and usability. Key updates included recalibrating Agent Chat %, Turn Count, and Action Count thresholds; resetting effort buckets to LOW under 35, MEDIUM 35–49, and HIGH 50 or above; adding Highest-Impact Case Categories, Agent Effort Leaderboard, and Site Effort Leaderboard views; rebuilding the Root Cause Matrix and KPI cards; enhancing the Contact-Level Drill-Down; retiring Word Count from the model; and renaming the “Not Agent Assist” cohort to “CCA2.” The updated report shows that three case categories drive roughly 70% of all effort in the system, with WISMO, Returns and Refunds, and My Money representing the largest levers for effort reduction. It also shows that Agent Assist scores higher on effort than CCA2 because it is being used on structurally harder work, meaning comparisons should be made within case category rather than in aggregate. The threshold fixes corrected prior inflation in the HIGH-effort population and brought the distribution much closer to design intent."
+        ],
+        "ns": "validate the updated report with the CRM team and finalize whether the new HIGH-effort threshold should be adopted as the long-term standard. Report link: Agent Effort Scorecard",
+        "report": "https://puppy.walmart.com/sharing/a0d0tex/agent-effort-scorecard"
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Performance Scorecard – Internal-Only Build and Expanded Agent Visibility",
+        "text": [
+          "Published the first Internal-only version of the Agent Performance Scorecard using Ops-supplied KPI weightings from SharePoint and expanded visibility to RightNow and Fixit populations that were previously not represented in the report. RightNow Email and Chat agents and Fixit Incident Management agents are now surfaced in the main table as visibility-only populations where source systems do not emit all of the KPI signals needed for grading, while Fixit also includes handled volume, AHT, and On-Time Closure % for frontline agents. This added roughly 7,100 agent-months of new visibility. The Internal-only build also filters out vendor rows end-to-end and applies department-specific KPI weights where Ops has already provided them, while standard v2 weights continue to serve as the default elsewhere. In addition, the prior quality gate was loosened so approximately 110 additional Internal agents now receive a real grade, and the performance tiers were renamed and recolored to feel more developmental and action-oriented."
+        ],
+        "ns": "bring in additional vertical-specific KPIs, reconcile approximately 57K Fixit incidents currently dropping because of agent-group naming drift, and automate SharePoint refresh so weight changes flow into the report without manual rebuilds. Report link: Agent Performance Scorecard – Internal V1",
+        "report": "https://puppy.walmart.com/sharing/p0b04z0/agent-performance-scorecard-internal-v1"
+      }
+    ]
+  },
+  "jul25": {
+    "label": "Week of July 25, 2026",
+    "cards": [
+      {
+        "section": "OPS",
+        "title": "Chat Inactivity Timeout Optimization – Significant Agent Capacity Opportunity Identified",
+        "text": [
+          "Completed an analysis of 60.8M customer responses across 10.9M FY27 YTD chat incidents to evaluate whether the current inactivity timeout can be shortened without materially affecting customer experience. The analysis found that 98.6% of customer responses occur within two minutes, while 2.87M inactive chats—26.3% of all chat incidents—consumed approximately 219K agent hours waiting for customers who never returned. Moving to a 120-second timeout could theoretically recover approximately 124K agent hours, or roughly 62K hours of effective capacity when accounting for two concurrent chats, while affecting only a small percentage of customers who respond after two minutes."
+        ],
+        "ns": "partner with Operations, Product, and Agent Assist teams on a controlled pilot and measure reconnects, repeat contacts, CSAT, and FCR before implementation. Report link: Customer Response Time Report V1",
+        "report": "https://puppy.walmart.com/sharing/r0v01pe/customer-response-time-report_v1"
+      },
+      {
+        "section": "WFM",
+        "title": "SLA Sensitivity Analysis – ASA and CSAT Relationship Added",
+        "text": [
+          "Expanded the SLA Sensitivity Analysis with a new ASA vs. CSAT tab that combines contact volume, CSAT, survey response rate, and appeasement behavior across 16 wait-time buckets. The new view is fully drillable by month, vertical, department, and channel and dynamically identifies CSAT inflection points and metric trends for each selected population. Aggregate findings show that approximately 91% of contacts are answered within 20 seconds, CSAT remains stable near 87% until roughly 40 seconds, and then declines to approximately 82% for waits of 151 seconds or more. Survey participation increases as waits become longer, while RCR remains broadly flat, indicating that wait time primarily affects satisfaction rather than repeat contacts."
+        ],
+        "ns": "correct the appeasement percentage logic and add an appeasement dollars-per-contact view for financial impact discussions. Report link: SLA Sensitivity Analysis",
+        "report": "https://puppy.walmart.com/sharing/a0d0tex/sla-sensitivity-analysis"
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Performance Scorecard – Fixit Attribution and Scoring Accuracy Improved",
+        "text": [
+          "Strengthened the accuracy and reliability of the Agent Performance Scorecard by improving Fixit effort attribution, embedding key scoring logic directly into the core model, and correcting performance-tier calculations. Fixit handle time now reflects actual ownership duration across all contributing agents rather than only the closing agent, increasing reported AHT from approximately 40 minutes to 77 minutes while leaving volume unchanged and providing a more accurate view of true effort. Percentile-based grading and tier-distribution logic were also permanently incorporated into the source framework to prevent future refreshes from reverting to outdated calculations. In addition, tier percentages are now calculated only against agents eligible for grading, while visibility-only populations remain in their appropriate operational buckets."
+        ],
+        "ns": "add Accounts Payable data from EBS, continue data validation, address remaining observations, and gather leadership feedback during the upcoming review. Report link: Agent Performance Scorecard – Internal V1",
+        "report": "https://puppy.walmart.com/sharing/p0b04z0/agent-performance-scorecard-internal-v1"
+      },
+      {
+        "section": "CRM",
+        "title": "Agent Assist Dashboard UI Enhancements – Pilot Cohorts and Workflow Filters Updated",
+        "text": [
+          "Completed Agent Assist dashboard updates by removing Experience Lab agents, separating BPO agents into Alpha and Pilot populations based on the Operations-provided agent list, and extending L1, L2, and L3 workflow filters across additional core metrics. These changes improve reporting accuracy and allow leadership to independently monitor adoption, performance, and outcomes for the existing Alpha population and the upcoming Pilot cohort."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Agent Assist Learning Curve Thresholds – Pilot Performance Guardrails Established",
+        "text": [
+          "Completed AHT and FCR threshold development for the upcoming 500-agent pilot using historical results from the three existing Agent Assist cohorts. The thresholds use the 75th and 90th percentiles to establish green, yellow, and red performance ranges based on observed learning-period variance. This gives leadership clear expectations for pilot performance and supports consistent monitoring after the August 4, 2026 launch. Reference reports: cohort-aa-aht-vs-non-aa-chat-3cohorts and cohort-aa-fcr-vs-non-aa-chat-3cohorts."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "FIXIT Operations Dashboard – Standardized Reporting Foundation in Development",
+        "text": [
+          "Continued development of the FIXIT Operations dashboard by transforming raw event-level data into a cleaned ticket-level reporting table and defining key metrics across volume, productivity, SLA, reassignment, and reopening. This creates a standardized reporting foundation and ensures stakeholders consistently interpret operational performance before dashboard development begins."
+        ],
+        "ns": "finalize metric definitions with Operations and leadership, complete the reporting table, and begin building the dashboard",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Northstar First-Workflow Journey Analysis – Fall-Through Paths Identified",
+        "text": [
+          "Completed the initial analysis of customer journeys for contacts that begin in Northstar by tracking the first workflow and determining whether the contact remained within Northstar or transitioned to another experience. The analysis helps isolate contacts that should have been resolved in Northstar but were not and identifies which workflows generate the highest fall-through into other buckets. These findings support targeted contact reviews, routing improvements, and prioritization of workflows requiring greater Northstar resolution capability. Report link: Northstar Performance Dashboard"
+        ],
+        "ns": "",
+        "report": "https://puppy.walmart.com/sharing/s0j0aug/ns-performance-dashboard"
+      },
+      {
+        "section": "CRM",
+        "title": "Agent Assist Sentiment Tracking – Expanded Customer Experience Measurement in Progress",
+        "text": [
+          "Started work to expand Agent Assist measurement beyond CSAT by introducing scaled sentiment analysis across time and customer touchpoints. Phase 1 is focused on partnering with Engineering to operationalize sentiment scoring through a nightly batch process, add sentiment trends alongside existing Agent Assist KPIs, and report sentiment by endpoints and workflows. This will give leadership a broader view of customer experience, help identify where policy adherence or deviation affects outcomes, and support more informed reviews of which policies and workflows are effective."
+        ],
+        "ns": "",
+        "report": ""
+      }
+    ]
+  },
+  "aug1": {
+    "label": "Week of August 1, 2026",
+    "cards": [
+      {
+        "section": "WFM",
+        "title": "Agent Effort Scorecard – Customer and Agent Effort Integrated",
+        "text": [
+          "Expanded the Agent Effort Scorecard to include Customer Effort Score for the first time, enabling leaders to compare how difficult each interaction was for both the agent and the customer. The contact-level drilldown now displays Agent Effort and Customer Effort side by side, with CES broken into Handle Time, Order Repeat, Transfer, and Reason Repeat components and supported by color-coded effort badges. Both measures were standardized to the same LOW, MEDIUM, and HIGH scale to improve comparability. Initial findings show that agent and customer effort do not always align, Handle Time contributes roughly 80% of CES, and 92% of contacts successfully match to a customer-effort record. CES also places a larger share of contacts in the HIGH-effort group because it is uncapped and can increase significantly on lengthy interactions."
+        ],
+        "ns": "validate the data and gather business-user feedback. Report link: Agent Effort Scorecard",
+        "report": "https://puppy.walmart.com/sharing/a0d0tex/agent-effort-scorecard"
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Performance Scorecard – Vendor Version Launched and Data Quality Improved",
+        "text": [
+          "Launched the first dedicated Vendor Performance Scorecard, covering approximately 11,800 outsourced agents across iQor, IBEX, Concentrix, Transcom, and IntouchCX, with vendor-specific scoring and a new Performance by Partner leaderboard. Data-quality improvements included correcting TELUS and 247.ai attribution to IBEX, reducing the July internal population from an inflated 3,866 records to 2,856 actual agents, excluding support populations from scoring, and accurately assigning approximately 1,044 RightNow agents to their departments. Transfer Rate was added as a weighted KPI across both scorecards, Accounts Payable visibility was incorporated, and reporting was refreshed through July 2026. Dark and Light themes and improved layouts were also introduced."
+        ],
+        "ns": "publish the Internal Scorecard in AISLE One and complete the SharePoint KPI-weighting list for the remaining departments. Report links: Internal Agent Performance Scorecard | Vendor Agent Performance Scorecard",
+        "report": "https://puppy.walmart.com/sharing/p0b04z0/agent-performance-scorecard-external-v1"
+      },
+      {
+        "section": "CRM",
+        "title": "Agent Assist Dashboard UI Enhancements – Sentiment and Workflow Views Pending Deployment",
+        "text": [
+          "Completed dashboard updates that add an overall fused sentiment score comparing Agent Assist and non-Agent Assist contacts, introduce definitions for Agent Assist end buckets, and expand L3 workflow analysis beyond AHT to include RCR, FCR, Sentiment, CSAT, NPS, and Transfer Rate. The changes are currently under review and awaiting deployment. These enhancements standardize metric interpretation and provide leadership with broader visibility into customer experience and workflow performance."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "WISMO-to-Returns and Replacements Transition Analysis",
+        "text": [
+          "Started analyzing Agent Assist contacts that begin in the WISMO workflow and subsequently transition into Returns and Replacements during the same customer interaction. This work will quantify gaps in the current Agent Assist workflow and determine whether workflow linkages available in traditional CCA2 should also be incorporated into Agent Assist to better reflect agent behavior and customer needs."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "FIXIT Operations Dashboard – Reporting Foundation and Initial Incident View Built",
+        "text": [
+          "Finalized AHT and TPH definitions and developed a standardized ticket-level dataset and agent-performance table for the FIXIT Operations Dashboard. Microsoft Graph was used to automate a weekly refreshed agent roster for team mapping, improving identification of tickets handled by the CES population. An initial Incident page was also developed with weekly and monthly trends for ticket volume, SLA, AHT, TPH, and agent performance."
+        ],
+        "ns": "finalize remaining metric definitions, partner with Reporting to publish the dashboard in AISLE One, provision stakeholder access, incorporate feedback, and investigate exceptionally high AHT cases for targeted process improvements",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "Cross-Cluster Transfer Analysis – Duplicate Transfer Logic Identified",
+        "text": [
+          "Identified a data duplication issue affecting Transfer Rate reporting for C7 and C45 cross-cluster transfers. Transfers passing through intermediate “Test” queues were being counted as separate events, resulting in duplicate transfer reporting. Operations and Analytics aligned on removing the intermediate queue events while preserving the actual customer transfer."
+        ],
+        "ns": "implement the corrected logic in production and validate Transfer Rate results after deployment",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "Refund Deny Rate Visibility – Fraud Operations Views in Development",
+        "text": [
+          "Started development of new AISLE One views to provide Fraud Operations with refund approval and denial rates by agent, site, and partner, alongside operational measures such as AHT. The reporting will support comparisons across US, Bangalore, Chennai, and BPO operations, enabling leaders to identify decision-making variation, agent outliers, coaching opportunities, and inconsistent application of standard procedures."
+        ],
+        "ns": "build the views, validate the metrics with stakeholders, and establish continuous monitoring",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "RCR Workflow Analysis – Workflow Execution Not Identified as a Primary Repeat Driver",
+        "text": [
+          "Completed an analysis comparing workflow selection, progression, and usage between original and repeat contacts. The work validated the relationship between Case Categories and workflow hierarchy, reconstructed workflow and step progression, and developed interactive views to compare agent pathways over time. Findings showed only minor increases in workflow and step counts for repeat contacts, with no material differences indicating that workflow navigation is a major driver of Repeat Contact Rate. The results suggest repeat behavior is more likely driven by underlying business processes, policies, or resolution effectiveness than by agent workflow execution."
+        ],
+        "ns": "",
+        "report": ""
+      }
+    ]
+  },
+  "aug14": {
+    "label": "Week of August 8, 2026",
+    "cards": [
+      {
+        "section": "OPS",
+        "title": "Pharmacy App Invalid Transfer Analysis – Baseline Development Underway",
+        "text": [
+          "Started an analysis to establish a baseline for Pharmacy App transfers and identify invalid or misrouted contacts. The work is focused on quantifying transfer volume, mapping source-to-destination paths, and identifying the primary routing, contact-reason, and operational drivers behind transfers. This will provide greater visibility into why Pharmacy App contacts are transferring and where routing improvements may be needed."
+        ],
+        "ns": "finalize baseline transfer metrics, build the source-to-destination view, and identify the highest-impact transfer drivers",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "RCR Waterfall Analysis – Actionable vs. Non-Actionable Repeat Drivers",
+        "text": [
+          "Started development of an RCR waterfall to break overall Repeat Contact Rate into more actionable components and improve transparency into what is driving the metric. The analysis is segmenting repeats into categories such as No Customer Present, No Workflow Entered, system-driven contacts, agent-related opportunities, and other repeat drivers. This will help distinguish the portion of RCR that Operations can realistically influence from customer- or system-driven contacts and quantify each bucket’s contribution to overall RCR."
+        ],
+        "ns": "finalize waterfall definitions, quantify each component, and align the methodology with stakeholders",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "Data Validation and Reporting Readiness – Fixit, Staffing Compliance, and Agent KPI Enhancements",
+        "text": [
+          "Continued strengthening WFM reporting accuracy through validation and query enhancements across Fixit, INSLA, Staffing Compliance, Contact Segment CRAFT, and Agent KPI reporting. A dedicated Fixit Survey query was developed for Handled and Handled Time INSLA with Internal/External Team Name segmentation, and Team Name logic was incorporated across existing and new Fixit queries. The Internal Agent Performance Scorecard validation query was also enhanced for debugging, INSLA validation was completed, and the Schedule Compliance % query was prepared for reporting integration. Root-cause analysis on WFM Main versus Contact Segment CRAFT variances was completed and shared with stakeholders, while Vendor Agent KPI validation identified and corrected several data and logic gaps. Staffing Compliance % remains under investigation because current results do not align with either reference report."
+        ],
+        "ns": "confirm the Fixit Survey source table, resolve SC% discrepancies, complete remaining validation, and incorporate required logic refinements",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Agent Assist Dashboard Revamp – Leadership Pilot View in Development",
+        "text": [
+          "Work is in progress to redesign the Agent Assist dashboard into a more standardized leadership view for monitoring pilot health and performance. Phase 1 includes developing UI mockups for leadership review, adding a first-workflow filter, and improving visibility into core metrics such as Sentiment and AHT at the workflow level. This will provide leadership with a clearer and more actionable view of pilot performance and enable more granular diagnosis of workflow-level opportunities."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Sentiment Deep Dive – Agent Assist vs. Traditional CCA2",
+        "text": [
+          "Started a deep dive into the drivers behind lower median sentiment scores for Agent Assist compared with traditional CCA2. The analysis is focused on identifying workflows associated with lower sentiment and evaluating whether appeasement behavior contributes to the higher sentiment observed in non-Agent Assist contacts. This work will help isolate the workflows having the greatest impact on Northstar customer sentiment and clarify whether differences are driven by workflow performance, appeasements, or broader experience design."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "FIXIT Operations Dashboard – Migrated to AISLE One CRM Hub",
+        "text": [
+          "Migrated the FIXIT Operations Dashboard to the AISLE One CRM Hub and expanded the reporting experience with a daily view, ticket-aging breakdown, L1/L2/L3 reason analysis, and refined AHT calculation logic. These enhancements provide a more standardized reporting foundation and improve visibility into operational trends, performance drivers, and productivity opportunities."
+        ],
+        "ns": "add team-level filtering, refine SLA logic, continue investigating high-AHT drivers, and incorporate stakeholder feedback. Report link: FIXIT Operations Dashboard",
+        "report": "https://aisleone-crm.ces-reporting-hub.stage.k8s.walmart.net/reports/fixit-ops"
+      },
+      {
+        "section": "CRM",
+        "title": "AOP Revamp – RCR and Transfer Cost Impact Added",
+        "text": [
+          "Enhanced the AOP model by incorporating financial impacts from Repeat Contact Rate and Transfer Rate. In partnership with Finance, CPC by department was collected and incorporated into the Transfer Rate cost methodology, improving visibility into the financial impact of operational performance changes."
+        ],
+        "ns": "review the updated AOP model with leadership, align on the methodology, and integrate the approved approach into the AHT Savings Dashboard",
+        "report": ""
+      }
+    ]
+  },
+  "aug17": {
+    "label": "Week of August 15, 2026",
+    "cards": [
+      {
+        "section": "CRM",
+        "title": "Spark Driver Workflow Analysis",
+        "text": [
+          "Analyzed MoM Spark workflow and step-level volume to quantify support journeys that direct drivers to store associates or other store-level assistance. Identified the workflows and resolution steps with the highest volume to provide Ops team with visibility into where driver support relies on store intervention.",
+          "Provides a data-driven view of high-volume driver-to-store touchpoints, helping Spark Ops identify and prioritize opportunities to improve driver-to-store handoffs, streamline support journeys, and improve the overall driver experience."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Agent Assist Dashboard UI Change",
+        "text": [
+          "Enhanced Agent Assist dashboard with new Sentiment Score tab, workflow filtering on Executive Summary, and UI improvements including tab/group renaming (Core Metrics → Exec Summary, Agent Groups → Phase I/II). Revamping the Agent Assist dashboard UI to provide a standardized view for leadership to monitor AA pilot health and performance.",
+          "Provides leadership with a standardized and actionable view of Agent Assist pilot health, with improved visibility into key metrics such as sentiment and AHT and the ability to assess performance at the workflow level."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "Agent Performance Scorecard",
+        "text": [
+          "Recreated the internal Agent Performance Scorecard in AISLE One. The scorecard is now live and undergoing validation to confirm metric calculations, data accuracy, and reporting consistency.",
+          "Creates a centralized and scalable view of agent performance, improving operational visibility and enabling leaders to more easily identify performance trends and opportunities."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "Walmart Canada Interim Reporting",
+        "text": [
+          "Started building an interim reporting solution for Walmart Canada while the full Canada data pipeline is being developed. Daily files are being loaded into a newly created GCS bucket and BigQuery tables to support Queue-Level Summary and Staffing Compliance reporting.",
+          "Enables Canada reporting to move forward without waiting for the full data pipeline, providing earlier visibility into operational performance and staffing compliance."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "Mexico KPI Alignment",
+        "text": [
+          "Initiated KPI alignment with the Mexico team, including an introductory session and detailed walkthrough of KPI calculation methodologies. Additional working sessions are planned to complete alignment.",
+          "Establishes consistent KPI definitions and calculation methodologies across markets, improving comparability and confidence in performance reporting."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "Accounts Payable Reporting",
+        "text": [
+          "Reviewed reporting requirements for the Accounts Payable workstream and began developing logic to incorporate accounts with email addresses into the reporting Contact Segment. Implementation is still pending.",
+          "Expands reporting coverage for Accounts Payable contacts and establishes a more complete data foundation for ongoing operational reporting and analysis."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "Transfer Rate Logic Updates",
+        "text": [
+          "Completed updates to the Transfer Path Deep Dive to improve transfer-path reporting accuracy. For cross-cluster transfers (C45 ↔ C7), removed duplicate paths such as CRPB → Test while preserving the true CRPB → WMCOM transfer. Also corrected scenarios where a contact transferred to both Supervisor and ART was showing both paths, ensuring the valid Supervisor transfer is retained while the ART transfer is excluded. Tracking through JIRA BCAN-5144: https://jira.walmart.com/projects/BCAN/queues/issue/BCAN-5144",
+          "Provides a cleaner and more accurate representation of customer transfer journeys, improving confidence in transfer-path analysis and helping teams focus on the true drivers of transfers. These changes only impact the Transfer Path Deep Dive and do not change the overall Transfer Rate reported in AISLE One."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "Executive Escalations Contact Count Logic Update",
+        "text": [
+          "Reviewed the Executive Escalations (EE) contact count reported in WBR and identified gaps in the existing logic. Updated the logic to exclude sources that should not be counted, including EVP - Repeat, Flipkart, Outbound Email, Special Project, Transfer, and No Value, while adding MM Escalations and Store Escalations queues that were previously missing. The updated logic has been provided to Data Enablement for implementation. Tracking through JIRA BCAN-5172: https://jira.walmart.com/projects/BCAN/queues/issue/BCAN-5172",
+          "Improves the accuracy of Executive Escalations contact volume in WBR and better aligns the metric with the intended EE population, providing leadership with a more reliable view of workload and contact trends."
+        ],
+        "ns": "",
+        "report": ""
+      }
+    ]
+  },
+  "aug22": {
+    "label": "Week of August 22, 2026",
+    "cards": [
+      {
+        "section": "CRM",
+        "title": "Time to Proficiency (TTP) — Agent Assist Pilot Group",
+        "text": [
+          "Work in progress to establish a measurement framework to quantify how long newly launched Agent Assist agents take to reach the AHT performance level of established users, and when they can be considered proficient with the tool",
+          "Enable early identification of agents who need coaching intervention. Creates a repeatable engine that applies consistently across each new launch, ensuring performance is measured relative to conditions at the time of that group’s launch"
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "Sentiment Score Baseline Analysis",
+        "text": [
+          "To establish baseline numbers for sentiment scores using historical contact data from the 30-day period preceding the August 4 Agent Assist launch. This baseline will enable performance comparison of post-implementation.",
+          "Establishes a quantitative baseline for sentiment score performance prior to Agent Assist deployment, enabling objective comparison of post-launch sentiment trends."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "CRM",
+        "title": "FIXIT Operations Dashboard",
+        "text": [
+          "Enhanced the Incidents tab by adding a CES US/CES India toggle and ticket-level details for backlogs over 90 days to improve backlog visibility and tracking. For the Surveys tab, built the foundational data table and started developing the visualizations.",
+          "Establishes a standardized reporting foundation with clearly defined and aligned metrics, enabling stakeholders to consistently interpret performance, identify operational trends and drivers, and make data-driven decisions. The latest enhancements also provide greater visibility into aging backlogs across teams and support more actionable follow-up."
+        ],
+        "ns": "Continue enhancing the dashboard by adding a location-level filter for the CES India team and continue developing the Surveys tab",
+        "report": ""
+      },
+      {
+        "section": "WFM",
+        "title": "WFM Canada Interim Reports",
+        "text": [
+          "Completed the initial build of the WFM Canada Interim Reports, including the Queue Level Summary & Staffing Compliance report. Developed the underlying SQL data model and report, with validation now underway to confirm data accuracy and address any discrepancies before rollout. https://puppy.walmart.com/sharing/p0b04z0/wfm-canada-reporting",
+          "Provides WFM Canada with an interim reporting solution to improve visibility into queue-level performance and staffing compliance while the longer-term reporting solution is developed. This enables teams to monitor staffing alignment, identify gaps, and make more informed workforce decisions."
+        ],
+        "ns": "",
+        "report": "https://puppy.walmart.com/sharing/p0b04z0/wfm-canada-reporting"
+      },
+      {
+        "section": "OPS",
+        "title": "CRPB → WMCOM Transfer / Sierra Routing Analysis",
+        "text": [
+          "Completed an initial analysis of the increase in CRPB → WMCOM transfers following a ~60% increase in CRPB volume and a 1,160 bps increase in transfer rate since WK18. Developed the logic to establish the previously missing Sierra → CRPB contact-level linkage, enabling end-to-end tracing of Sierra’s original intent and routing decision. Initial review of WK29 contacts indicates that many transferred contacts are associated with delivery, shipping, returns, and refunds, suggesting potential Sierra routing opportunities. The findings and contact-level data have been shared with the Sierra team for validation and review.",
+          "Creates visibility into previously unavailable Sierra → CRPB → WMCOM routing journeys, enabling identification of contacts that could potentially be routed directly to WMCOM. Addressing these routing opportunities could reduce unnecessary CRPB volume and transfers, lower customer effort and billable contacts, and improve overall routing efficiency."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "WMCOM → App Pharmacy Transfer Analysis",
+        "text": [
+          "Completed the WMCOM → App Pharmacy transfer analysis, identifying that transfers increased from ~1K to 1.3K per week by WK27, contributing ~10 bps to the overall FY27 transfer rate. 59% of transfers by WK28 were for contacts outside the App Pharmacy team’s scope, up from 46.7% in WK18. Over 90% of these contacts involve delivery/shipping issues for pharmacy orders or customers trying to reach their local Walmart pharmacy. The analysis was expanded to provide partner, site, and agent-level views, along with contact-level details to pinpoint where these transfers are originating.",
+          "Provides Operations with a clear view of the partners, sites, and agents transferring customers to App Pharmacy for issues the team cannot resolve, enabling targeted coaching and corrective actions. Addressing these behaviors can reduce unnecessary transfers and customer effort, improve Transfer Rate, and route customers to the appropriate team the first time."
+        ],
+        "ns": "",
+        "report": ""
+      },
+      {
+        "section": "OPS",
+        "title": "FY27 RCR Waterfall Analysis",
+        "text": [
+          "Completed the FY27 RCR Waterfall analysis to separate repeat contacts that represent true unresolved customer issues from scenarios where no meaningful resolution action occurred, including disconnects, uncaptured contact reasons, short abandoned calls, system auto-closures, and repeat chains extending beyond the same issue episode. The analysis bridges the current YTD RCR of 19.11% to an adjusted RCR of 16.77%, representing a 2.34 percentage-point difference across nine adjustment steps. A secondary view breaks the remaining adjusted RCR down by contact reason to validate the resulting population from a different perspective.  https://puppy.walmart.com/sharing/p0s05rd/rcr-waterfall-08.19.2026",
+          "Establishes a clearer view of what portion of RCR represents actionable unresolved customer issues versus contacts driven by process, system, or contact-handling mechanics. This helps leadership better understand the drivers behind the reported RCR rate and provides a framework to prioritize the right operational, process, and technology actions to reduce repeat contacts."
+        ],
+        "ns": "",
+        "report": "https://puppy.walmart.com/sharing/p0s05rd/rcr-waterfall-08.19.2026"
+      }
+    ]
+  }
+}
